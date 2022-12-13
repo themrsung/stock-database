@@ -36,3 +36,13 @@ body {
     background-color: white;
     color: black;
 }
+
+.ActiveButton {
+    color: greenyellow;
+    border-color: greenyellow;
+}
+
+.ActiveButton:hover {
+    color: black;
+    background-color: greenyellow;
+}

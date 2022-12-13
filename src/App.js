@@ -1,4 +1,3 @@
-import logo from "./resources/logo.svg"
 import "./style/App.css"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "./pages/Home"
@@ -8,7 +7,7 @@ function App() {
         <div className="App">
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Home activePage="Home" />} />
                 </Routes>
             </BrowserRouter>
         </div>

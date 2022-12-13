@@ -1,6 +1,9 @@
 import "../../style/components.css"
 
-const Header = () => {
+const Header = (props) => {
+    const isHomeActive = props.activePage === "Home"
+    const isStocksActive = props.activePage === "Stocks"
+
     return (
         <header className="Header">
             <div className="HeaderLeft">
@@ -18,13 +21,25 @@ const Header = () => {
                     <nav className="HeaderRightNavBar">
                         <ul className="HeaderRightNavBarList">
                             <li>
-                                <button className="Button NavBarButton">
-                                    asdas
+                                <button
+                                    className={
+                                        isHomeActive
+                                            ? "Button NavBarButton ActiveButton"
+                                            : "Button NavBarButton"
+                                    }
+                                >
+                                    Home
                                 </button>
                             </li>
                             <li>
-                                <button className="Button NavBarButton">
-                                    ss
+                                <button
+                                    className={
+                                        isStocksActive
+                                            ? "Button NavBarButton ActiveButton"
+                                            : "Button NavBarButton"
+                                    }
+                                >
+                                    Stocks
                                 </button>
                             </li>
                         </ul>

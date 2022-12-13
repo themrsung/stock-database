@@ -9,7 +9,7 @@ import Header from "./shared/header"
 const applyHeaderAndFooter = (props, Element) => {
     return (
         <div className="PageContainer">
-            <Header />
+            <Header activePage={props.activePage} />
             <Element />
             <Footer />
         </div>
