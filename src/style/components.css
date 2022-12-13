@@ -1,0 +1,66 @@
+.Header {
+    height: 10vh;
+    background-color: blue;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.HeaderLeft {
+    height: 100%;
+    margin-right: auto;
+}
+
+.HeaderLeftTitleContainer {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.HeaderLeftTitleImage {
+    height: 100%;
+    margin-right: 10%;
+}
+
+.HeaderRight {
+    height: 100%;
+    margin-left: auto;
+}
+
+.HeaderRightNavBarContainer {
+    height: 100%;
+}
+
+.HeaderRightNavBar {
+    height: 100%;
+}
+
+.HeaderRightNavBarList {
+    margin: 0;
+
+    list-style: none;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+
+.HeaderRightNavBarList > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    margin-right: 20%;
+}
